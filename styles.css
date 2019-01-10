@@ -1,0 +1,179 @@
+@font-face { 
+    font-family: 'CocaCola'; 
+    src: url('fonts/CocaCola.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+html,
+body{
+	margin: 0;
+	padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+img[alt="Картинка"]{
+    opacity: 0.5;
+}
+
+a {
+    color:grey;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu {
+    background-color: darkslateblue;
+    border-bottom: 4px solid green;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 65px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: -5px;
+    transition: 500ms;
+}
+
+.menu li:hover {
+    background-color: green; 
+}
+
+.menu li:active {
+    background-color: orange; 
+}
+
+.menu li:first-child {
+    background-color: green; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 100vh;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.header .content {
+    padding: 15% 0;
+}
+
+.block {
+    box-sizing: border-box;
+    min-height: 100vh;
+	background-color: #fff;
+    padding: 65px 15px 0px 15px;
+}
+
+.title-h1{
+    margin-top: 0;
+    color: #fff;
+    transform: translate(100px,10px);
+}
+
+.header p{
+    color: #fff
+}
+
+.header a{
+    font-size: 30px;
+    font-weight: bold;
+    opacity: .5;
+    transform: scale(3);
+}
+
+.header a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.block2 {
+    background-image: url('images/background.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center center;
+    color: white;
+}
+
+.block2 ul {
+    margin: 0;
+    list-style: circle inside;
+}
+
+.block3 img {
+    width: 100%;
+}
+
+.block3 p {
+    line-height: 25px;
+    text-align: justify;
+    hyphens: auto;
+    transform: rotate(25deg);
+}
+
+.title-h2{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+    letter-spacing: 2px;
+    transform: skew(45deg);
+}
+
+.red-line{
+    text-indent: 15px;
+}
+
+.cola-text {
+    font-family: 'CocaCola';
+    font-size: 30px;
+}
+
+.tree-columns-block {
+    column-count: 3;
+}
+
+.tree-columns-block ul  {
+    color: white;
+    font-weight: bold;
+}
+
+.tree-columns-block > ul  {
+    color: orange;
+}
+
+.footer{
+    background-color: gray;
+    padding: 30px 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.counterfirst {
+    list-style: none;
+}
+
+.countersecond{
+    list-style: none;
+}
+.countersecond li::before{
+    font-family: fontawesome;
+    content: "\f14a";
+    color: red;
+    margin: 10px;
+} 
